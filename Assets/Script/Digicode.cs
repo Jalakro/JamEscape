@@ -43,7 +43,7 @@ public class Digicode : MonoBehaviour
             if (code[0] == combinaison[0] && code[1] == combinaison[1] && code[2] == combinaison[2] && code[3] == combinaison[3])
             {
                 CodePrint.GetComponent<TextMeshProUGUI>().text = "Valide";
-                SuccessRiddle.Success2();
+                //SucessRiddle.Success2();
             }
             else
             {
