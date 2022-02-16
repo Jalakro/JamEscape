@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class Digicode : MonoBehaviour
 {
     private List<int> code = new List<int>();
     private int[] combinaison = new int[4] {5, 7, 1, 3};
     private bool validate;
-    [SerializeField] private TextMeshProUGUI CodePrint
+    [SerializeField] private TextMeshProUGUI CodePrint;
     
     public void Digits(int id)
     {
@@ -35,12 +36,14 @@ public class Digicode : MonoBehaviour
 
     void Update()
     {
-        
+        CodePrint.GetComponent<TextMeshProUGUI>().text = $"{code}";
+
         if (validate == true)
         {
             if (code[0] == combinaison[0] && code[1] == combinaison[1] && code[2] == combinaison[2] && code[3] == combinaison[3])
             {
-
+                CodePrint.GetComponent<TextMeshProUGUI>().text = "Valide";
+                SuccessRiddle.Success2();
             }
             else
             {
@@ -48,6 +51,5 @@ public class Digicode : MonoBehaviour
                 reset();
             }
         }
-        if tous nombres égaux alors deplacer porte + print "VALIDE" + affichage des nombres dans un TMP
     }
 }
