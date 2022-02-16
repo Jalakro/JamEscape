@@ -17,7 +17,7 @@ public class Digicode : MonoBehaviour
     {
         if (code.Count > 3)
         {
-            code.RemoveAt(3);
+            code.RemoveAt(0);
         }
         code.Add(id);
     }
@@ -34,11 +34,17 @@ public class Digicode : MonoBehaviour
     void Start()
     {
         validate = false;
+        for(int i = 0; i <4; i++)
+        {
+            code.Add(0);
+        }
     }
 
     void Update()
     {
-        CodePrint.GetComponent<TextMeshProUGUI>().text = $"{code}";
+        CodePrint.GetComponent<TextMeshProUGUI>().text = $"{code[0]}{code[1]}{code[2]}{code[3]}";
+
+        
 
         if (validate == true)
         {
