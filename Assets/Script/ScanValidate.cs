@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ScanValidate : MonoBehaviour
 {
     public short ScanID;
-    [SerializeField] private SucessRiddle SuccessManager;
+    [SerializeField] private SuccessRiddle SuccessManager;
     // Start is called before the first frame update
     void Start()
     {

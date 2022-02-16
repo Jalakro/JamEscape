@@ -23748,7 +23748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScanID: 1
-  SuccessManager: {fileID: 0}
+  SuccessManager: {fileID: 1161256301}
 --- !u!114 &1476166509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26950,7 +26950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScanID: 0
-  SuccessManager: {fileID: 0}
+  SuccessManager: {fileID: 1161256301}
 --- !u!1 &1641279868
 GameObject:
   m_ObjectHideFlags: 0
